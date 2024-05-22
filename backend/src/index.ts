@@ -1,17 +1,7 @@
-import express from "express";
-import { config } from "dotenv";
+import app from "./app.js";
 import { connectToDatabase } from "./db/connection.js";
 
-config();
-const app = express();
-
-app.use(express.json());
-
-app.get("/", (req, res)=>{
-  res.send("Hello World");
-})
-
-//connections and listeneres
+//connection
 const PORT = process.env.PORT || 5000;
 connectToDatabase()
 
