@@ -23,7 +23,6 @@ const Footer = () => {
               Alberto Márquez
             </Link>
           </span>
-          💘
         </p>
       </div>
     </footer>
