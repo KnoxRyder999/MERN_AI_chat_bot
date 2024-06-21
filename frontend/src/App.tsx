@@ -5,7 +5,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/SignUp";
 import Chat from "./pages/Chat";
 import NotFound from "./pages/NotFound";
-import Footer from "./components/Footer";
+
 
 function App() {
   return (
@@ -18,7 +18,6 @@ function App() {
         <Route path="/chat" element={<Chat/>}/>
         <Route path="*" element={<NotFound/>}/>
       </Routes>
-      <Footer/>
     </main>
   )
 }
